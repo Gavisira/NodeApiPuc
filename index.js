@@ -16,6 +16,6 @@ app.use(routes)
 
 
 
-app.listen(444,()=>{
+app.listen(process.env.PORT||444,()=>{
     console.log(`Express started at http://localhost:444`)
 })
